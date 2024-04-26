@@ -11,7 +11,9 @@ const ListingSchema = new Schema({
         typr:Number,
         required:true,
     },
-    image: String,
+    image: {
+        type:String,
+        set:(v)=> v ===""? "default link":v,
     location: {
         type:String,
         required:true,
