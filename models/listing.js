@@ -22,9 +22,9 @@ const ListingSchema = new Schema({
     Country:{
         type:String,
 
-        
+    },
 
 });
 
 const Listing =mongoose.model("Listing",ListingSchema);
-module.export =Listing;
+module.exports =Listing;
