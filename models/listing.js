@@ -14,13 +14,17 @@ const ListingSchema = new Schema({
     image: {
         type:String,
         set:(v)=> v ===""? "default link":v,
+    },
     location: {
         type:String,
         required:true,
     },
-    Country:String,
+    Country:{
+        type:String,
+
+        
 
 });
 
 const Listing =mongoose.model("Listing",ListingSchema);
-modules.export =Listing;
+module.export =Listing;
